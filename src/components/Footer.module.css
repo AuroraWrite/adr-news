@@ -1,0 +1,163 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 20px 36px 20px;
+  width: 100%;
+  margin-top: auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.footerInner {
+  max-width: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* Social Row */
+.socialRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 34px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+  cursor: default;
+}
+
+.socialIcon:hover {
+  opacity: 0.8;
+}
+
+/* App Download Section */
+.appSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.storeBadge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000000;
+  border: 1px solid #777777;
+  border-radius: 6px;
+  padding: 5px 12px;
+  gap: 9px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: default;
+  user-select: none;
+}
+
+.badgeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.badgeSub {
+  font-size: 8px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.badgeMain {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #2e2e2e;
+  margin: 10px 0 24px 0;
+}
+
+/* Legal / Market Disclaimer */
+.disclaimer {
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: #9a9a9a;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+/* Footer Links */
+.linksList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 10px;
+  margin-bottom: 24px;
+}
+
+.footerLink {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: default;
+  transition: opacity 0.2s ease;
+}
+
+.footerLink:hover {
+  opacity: 0.8;
+}
+
+/* Copyright Section */
+.copyrightBlock {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #8c8c8c;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.copyrightLine {
+  margin: 0;
+}

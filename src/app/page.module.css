@@ -1,0 +1,578 @@
+.pageWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* Header */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  height: 54px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.headerInner {
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.menuBar {
+  display: block;
+  width: 20px;
+  height: 2.2px;
+  background-color: #000000;
+  border-radius: 1px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImg {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+/* Main Content */
+.mainContainer {
+  flex: 1;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleTopSection {
+  padding: 16px 16px 12px 16px;
+}
+
+/* 1. Category Row */
+.categoryRow {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0c1821;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* 2. Headline with Red Vertical Bar */
+.titleContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.redAccentBar {
+  width: 5px;
+  background-color: #cc0000;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.articleTitle {
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #0c1821;
+  letter-spacing: -0.3px;
+}
+
+/* 3. Date & Author Meta */
+.articleMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 6px;
+}
+
+.metaUpdateRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.metaChevron {
+  font-size: 10px;
+  color: #555555;
+  transition: transform 0.2s;
+}
+
+.metaAuthorRow {
+  font-size: 13px;
+  color: #222222;
+}
+
+.authorPrefix {
+  color: #555555;
+}
+
+.authorLink {
+  color: #0c1821;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Main Photo Section */
+.imageSection {
+  width: 100%;
+}
+
+.articleImageWrap {
+  width: 100%;
+  background-color: #111111;
+  overflow: hidden;
+}
+
+.articleImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.captionRow {
+  padding: 8px 16px 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #595959;
+  line-height: 1.4;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.captionText {
+  flex: 1;
+  padding-right: 8px;
+}
+
+.captionIcon {
+  font-size: 11px;
+  color: #888888;
+}
+
+/* Article Body */
+.articleBody {
+  padding: 16px 16px 24px 16px;
+}
+
+.articleLead {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.sectionHeading {
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 800;
+  color: #0c1821;
+  margin: 24px 0 12px 0;
+}
+
+.articleP {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+}
+
+/* Quotes & Highlights */
+.quoteBox {
+  margin: 20px 0;
+  padding: 14px 16px;
+  background-color: #f7f9fa;
+  border-left: 3px solid #0c2340;
+  border-radius: 0 4px 4px 0;
+}
+
+.quoteIntro {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0c2340;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.quoteText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333333;
+  font-style: italic;
+}
+
+/* Clarification Box */
+.clarificationBox {
+  margin: 22px 0;
+  padding: 16px;
+  background-color: #fff9f0;
+  border: 1px solid #ffe8cc;
+  border-radius: 6px;
+}
+
+.clarificationHeader {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d97706;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Bullet List */
+.bulletList {
+  margin: 12px 0 20px 20px;
+  color: #2b2b2b;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.bulletList li {
+  margin-bottom: 8px;
+}
+
+/* CTA Button */
+.ctaButtonWrap {
+  margin: 28px 0 24px 0;
+  text-align: center;
+}
+
+.ctaButton {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #cc0000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 8px rgba(204, 0, 0, 0.25);
+}
+
+.ctaButton:hover {
+  background-color: #b30000;
+}
+
+.ctaButton:active {
+  transform: scale(0.99);
+}
+
+.ctaButton:disabled {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Social Share Row & Red Accent Block */
+.redDividerBlock {
+  width: 56px;
+  height: 6px;
+  background-color: #cc0000;
+  margin: 30px 0 16px 0;
+  border-radius: 1px;
+}
+
+.shareRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.shareBtn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #262626;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.shareBtn:hover {
+  border-color: #999999;
+  background-color: #f9f9f9;
+}
+
+/* Up Next Section */
+.upNextSection {
+  margin-top: 10px;
+}
+
+.upNextHeading {
+  font-size: 26px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.upNextList {
+  display: flex;
+  flex-direction: column;
+}
+
+.upNextCard {
+  display: flex;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.upNextCard:last-child {
+  border-bottom: none;
+}
+
+.upNextThumbWrap {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+.upNextThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.upNextInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 96px;
+}
+
+.upNextTitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0c1821;
+  text-decoration: none !important;
+}
+
+.upNextCard:hover .upNextTitle {
+  color: #0c1821;
+  text-decoration: none !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #0c1821;
+  color: #94a3b8;
+  padding: 24px 16px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footerInner {
+  max-width: 100%;
+}
+
+.footerLogo {
+  height: 24px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.footerDisclaimer {
+  margin-bottom: 16px;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.footerBottomRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 14px;
+}
+
+.copyrightText {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footerLink {
+  color: #94a3b8;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+}
+
+/* Full Screen Loading Overlay */
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(12, 24, 33, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loadingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: #ffffff;
+}
+
+.globalSpinner {
+  width: 44px;
+  height: 44px;
+  border: 3.5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #cc0000;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.loadingText {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* More Crypto News Pill Button (图2 样式) */
+.moreCryptoBtnWrap {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.moreCryptoBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 56px;
+  background-color: #0c0c0c;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 9999px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.moreCryptoBtn:disabled {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.moreCryptoBtn:hover {
+  background-color: #222222;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transform: translateY(-1px);
+}
+
+.moreCryptoBtn:active {
+  background-color: #000000;
+  transform: translateY(0);
+}
